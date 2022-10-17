@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O |tic tak toe| X</title>
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header class="playerBox">
+        <div id="p-1" class="player active">Player 1</div>
+        <div id="p-2" class="player">Player 2</div>
+      </header>
+      <main class="playBox">
+        <button id="0-0" class="btn btn--left" onclick="fun(this)"></button>
+        <button id="0-1" class="btn btn--left" onclick="fun(this)"></button>
+        <button id="0-2" class="btn btn--right" onclick="fun(this)"></button>
+        <button id="1-0" class="btn btn--left" onclick="fun(this)"></button>
+        <button id="1-1" class="btn btn--left" onclick="fun(this)"></button>
+        <button id="1-2" class="btn btn--right" onclick="fun(this)"></button>
+        <button
+          id="2-0"
+          class="btn btn--left btn--bottom"
+          onclick="fun(this)"
+        ></button>
+        <button
+          id="2-1"
+          class="btn btn--left btn--bottom"
+          onclick="fun(this)"
+        ></button>
+        <button
+          id="2-2"
+          class="btn btn--right btn--bottom"
+          onclick="fun(this)"
+        ></button>
+      </main>
+    </section>
+    <div class="resultBox">
+      <div class="border">
+        <p class="name">Player 1 (O)</p>
+        <div class="score">0</div>
+      </div>
+      <div class="border">
+        <p class="name">Tie</p>
+        <div class="score">0</div>
+      </div>
+      <div>
+        <p class="name">Player 2 (X)</p>
+        <div class="score">0</div>
+      </div>
+    </div>
+    <button class="btn--rules" type="button">Rules</button>
+    <section class="rules--container d--none">
+      <div class="rules--outer">
+        <p class="close">&Cross;</p>
+        <h1 class="headings">Play Tic-Tac-Toe</h1>
+        <p class="rules-text">
+          Play Tic-Tac-Toe online with our our online Tic-Tac-Toe game. Play
+          Multiplayer with a friend or against a comptuer.&nbsp;
+        </p>
+        <br />
+        <h2 class="headings">What is Tic-Tac-Toe?</h2>
+        <p class="rules-text">
+          Tic-Tac-Toe is a game where two players complete a row, a column, or a
+          diagonal line with either three O's or three X's drawn in the spaces
+          of a grid of nine squares.
+        </p>
+        <br />
+        <h2 class="headings">How to Play Tic-Tac-Toe</h2>
+        <p class="rules-text">
+          When it's your turn, click anywhere on the grid to place either an X
+          or an O in that square. Your goal is to get three in a row before your
+          opponent does. You can play against a computer, or with a friend on
+          the same computer.&nbsp;
+        </p>
+        <br />
+        <h2 class="headings">Tic-Tac-Toe Tips and Strategies</h2>
+        <p class="rules-text">
+          <strong>Start with the corners - </strong>You can use the corners to
+          set up multiple winning moves at once, leaving your opponent no way to
+          block your win. If your opponent doesn't play the centre square, you
+          will most likley win the game. Your 2nd move should be the centre
+          square which will force your opponent to block you. Your 3rd move
+          should be on one of the border squares and next to the square where
+          you made your first move. This will give you a double winning move.
+        </p>
+      </div>
+    </section>
+    <div class="displayMassegeContainer d--none">
+      <div class="outer">
+        <div class="winner">some one win here Lorem ipsum dolor</div>
+        <div class="btn--playAgain">▶ Play Again</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

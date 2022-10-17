@@ -43,6 +43,8 @@ function reset() {
     ele.textContent = "";
     ele.disabled = false;
   });
+  player1El.classList.add("active");
+  player2El.classList.remove("active");
 }
 reset();
 
